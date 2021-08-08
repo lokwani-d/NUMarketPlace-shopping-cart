@@ -1,0 +1,14 @@
+.classpath
+.project
+.settings/
+.springBeans
+.springWebflow
+.tern-project
+ESD Final Project Report.docx
+target/
+.vscode
+.intellij
+.idea
+bin
+src/main/webapp/META-INF
+src/main/resources/META-INF

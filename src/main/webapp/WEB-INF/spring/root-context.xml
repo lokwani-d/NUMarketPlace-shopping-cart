@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean name="userValidator"
+		class="com.finalproject.utils.UserValidator"></bean>
+	<bean name="loginValidator" class="com.finalproject.utils.LoginValidator"></bean>
+	<bean name="sellerValidator"
+		class="com.finalproject.utils.SellerValidator"></bean>
+	<bean name="sellerLoginValidator" class="com.finalproject.utils.SellerLoginValidator"></bean>
+	<bean name="userdao" class="com.finalproject.DAO.UserDAO"></bean>
+	<bean name="orderdao" class="com.finalproject.DAO.OrderDAO"></bean>
+	<bean name="productdao" class="com.finalproject.DAO.ProductDAO"></bean>
+	<bean name="reviewdao" class="com.finalproject.DAO.ReviewDAO"></bean>
+	<bean name="user" class="com.finalproject.POJO.User"></bean>
+	<bean name="review" class="com.finalproject.POJO.Review"></bean>
+	<bean name="techProduct" class="com.finalproject.POJO.TechProduct"></bean>
+	<bean name="groceryProduct" class="com.finalproject.POJO.GroceryProduct"></bean>
+	<bean name="clothingProduct" class="com.finalproject.POJO.ClothingProduct"></bean>
+	<bean name="sellerdao" class="com.finalproject.DAO.SellerDAO"/>
+	<bean name="orderValidator" class="com.finalproject.utils.OrderValidator"/>
+	<bean name="reviewValidator" class="com.finalproject.utils.ReviewValidator"></bean>
+	<bean name="techValidator" class="com.finalproject.utils.TechproductValidator"></bean>
+	<bean name="groceryValidator" class="com.finalproject.utils.GroceryProductValidator"></bean>
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		<!-- setting maximum upload size -->
+		<property name="maxUploadSize" value="10000000" />
+
+	</bean>
+</beans>
